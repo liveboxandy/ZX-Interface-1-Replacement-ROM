@@ -8,7 +8,7 @@
 
 "Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP","MANUFACTURER","PARTREV","STANDARD"
 "1","1","C1","100nF","Device:C","Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder","~","","","",""
-"2","1","J2","Conn_01x09_Pin","Connector:Conn_01x09_Pin","Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical","~","","","",""
+"2","1","J1","Conn_01x09_Pin","Connector:Conn_01x09_Pin","Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical","~","","","",""
 "3","2","J3, J4","BBL-112-G-E","PinPIn12:BBL-112-G-E","Switch:Pin-Pin Header 2.54mm Round Samtec BBL-112-G-E","","","Samtec","R","Manufacturer Recommendations"
 "4","8","R1, R2, R3, R4, R5, R6, R7, R8","10K","Device:R","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","~","","","",""
 "5","1","SW1","SW_SPDT","Switch:PCM12SMTR","Switch:SW_PCM12SMTR","PCM12SMTR","","","",""

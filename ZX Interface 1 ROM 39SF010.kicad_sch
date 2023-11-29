@@ -9,7 +9,7 @@
     (date "2023-11-22")
     (rev "1.1")
     (company "Andy Potter")
-    (comment 1 "Add 0V connection to J2 allowing external switching of A14/A15/A16/A17 and A18.")
+    (comment 1 "Add 0V connection to J1 allowing external switching of A14/A15/A16/A17 and A18.")
     (comment 2 "DO NOT EXTERNALLY SWITCH A13")
   )
 
@@ -1850,7 +1850,7 @@
   (symbol (lib_id "Connector:Conn_01x09_Pin") (at 205.994 16.764 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6fd8c6f8-f1f2-4076-973d-a7ed50a481e5)
-    (property "Reference" "J2" (at 217.17 18.034 90)
+    (property "Reference" "J1" (at 217.17 18.034 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x09_Pin" (at 205.994 11.938 90)
@@ -1874,7 +1874,7 @@
     (instances
       (project "ZX Interface 1 ROM 39SF010"
         (path "/8751c651-26dc-4d30-8f2d-d9f24098bdc5"
-          (reference "J2") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
