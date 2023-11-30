@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>W:\Emulators\Spectrum Repair\ZX Interface 1 ROM 39SF010\ZX Interface 1 ROM 39SF010.kicad_sch</source>
-    <date>22/11/2023 10:56:25</date>
+    <date>30/11/2023 16:35:35</date>
     <tool>Eeschema 7.0.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -11,7 +11,7 @@
         <rev>1.1</rev>
         <date>2023-11-22</date>
         <source>ZX Interface 1 ROM 39SF010.kicad_sch</source>
-        <comment number="1" value="Add 0V connection to J2 allowing external switching of A14/A15/A16/A17 and A18."/>
+        <comment number="1" value="Add 0V connection to J1 allowing external switching of A14/A15/A16/A17 and A18."/>
         <comment number="2" value="DO NOT EXTERNALLY SWITCH A13"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -35,9 +35,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4244328e-9177-42d5-8aef-eca99c5d8953</tstamps>
     </comp>
-    <comp ref="J2">
+    <comp ref="J1">
       <value>Conn_01x09_Pin</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical</footprint>
+      <footprint>Switch:PinSocket_1x09_P2.54mm_HorizontalR</footprint>
       <libsource lib="Connector" part="Conn_01x09_Pin" description="Generic connector, single row, 01x09, script generated"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ZX Interface 1 ROM 39SF010.kicad_sch"/>
@@ -454,7 +454,7 @@
     </net>
     <net code="24" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
-      <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
       <node ref="J3" pin="12" pinfunction="12" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1" pintype="unspecified"/>
@@ -464,43 +464,43 @@
       <node ref="SW1" pin="S4" pinfunction="S4" pintype="power_in"/>
       <node ref="U1" pin="24" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="25" name="Net-(J2-Pin_1)">
-      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    <net code="25" name="Net-(J1-Pin_1)">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="WE" pintype="input"/>
     </net>
-    <net code="26" name="Net-(J2-Pin_2)">
-      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    <net code="26" name="Net-(J1-Pin_2)">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="A18" pintype="input"/>
     </net>
-    <net code="27" name="Net-(J2-Pin_3)">
-      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    <net code="27" name="Net-(J1-Pin_3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="A17" pintype="input"/>
     </net>
-    <net code="28" name="Net-(J2-Pin_4)">
-      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    <net code="28" name="Net-(J1-Pin_4)">
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="A16" pintype="input"/>
     </net>
-    <net code="29" name="Net-(J2-Pin_5)">
-      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    <net code="29" name="Net-(J1-Pin_5)">
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="A15" pintype="input"/>
     </net>
-    <net code="30" name="Net-(J2-Pin_6)">
-      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    <net code="30" name="Net-(J1-Pin_6)">
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="A14" pintype="input"/>
     </net>
-    <net code="31" name="Net-(J2-Pin_7)">
-      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    <net code="31" name="Net-(J1-Pin_7)">
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="A13" pintype="input"/>
     </net>
-    <net code="32" name="Net-(J2-Pin_8)">
-      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    <net code="32" name="Net-(J1-Pin_8)">
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U1" pin="30" pinfunction="CE" pintype="input"/>
     </net>

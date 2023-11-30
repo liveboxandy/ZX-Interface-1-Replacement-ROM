@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,7.0.8*%
-%TF.CreationDate,2023-11-29T12:22:39+00:00*%
+%TF.CreationDate,2023-11-30T16:34:48+00:00*%
 %TF.ProjectId,ZX Interface 1 ROM 39SF010,5a582049-6e74-4657-9266-616365203120,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L2,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.8) date 2023-11-29 12:22:39*
+G04 Created by KiCad (PCBNEW 7.0.8) date 2023-11-30 16:34:48*
 %MOMM*%
 %LPD*%
 G01*
@@ -30,10 +30,10 @@ G04 Aperture macros list*
 20,1,$1+$1,$8,$9,$2,$3,0*%
 G04 Aperture macros list end*
 %TA.AperFunction,ComponentPad*%
-%ADD10R,1.700000X1.700000*%
+%ADD10O,1.700000X1.700000*%
 %TD*%
 %TA.AperFunction,ComponentPad*%
-%ADD11O,1.700000X1.700000*%
+%ADD11R,1.700000X1.700000*%
 %TD*%
 %TA.AperFunction,SMDPad,CuDef*%
 %ADD12R,0.700000X1.500000*%
@@ -64,34 +64,34 @@ G04 Aperture macros list end*
 %TD*%
 G04 APERTURE END LIST*
 D10*
-%TO.P,J1,1,Pin_1*%
-%TO.N,Net-(J1-Pin_1)*%
-X170161000Y-107413400D03*
-D11*
-%TO.P,J1,2,Pin_2*%
-%TO.N,Net-(J1-Pin_2)*%
-X170161000Y-109953400D03*
-%TO.P,J1,3,Pin_3*%
-%TO.N,Net-(J1-Pin_3)*%
-X170161000Y-112493400D03*
-%TO.P,J1,4,Pin_4*%
-%TO.N,Net-(J1-Pin_4)*%
-X170161000Y-115033400D03*
-%TO.P,J1,5,Pin_5*%
-%TO.N,Net-(J1-Pin_5)*%
-X170161000Y-117573400D03*
-%TO.P,J1,6,Pin_6*%
-%TO.N,Net-(J1-Pin_6)*%
-X170161000Y-120113400D03*
-%TO.P,J1,7,Pin_7*%
-%TO.N,Net-(J1-Pin_7)*%
-X170161000Y-122653400D03*
-%TO.P,J1,8,Pin_8*%
-%TO.N,Net-(J1-Pin_8)*%
-X170161000Y-125193400D03*
 %TO.P,J1,9,Pin_9*%
 %TO.N,GND*%
 X170161000Y-127733400D03*
+%TO.P,J1,8,Pin_8*%
+%TO.N,Net-(J1-Pin_8)*%
+X170161000Y-125193400D03*
+%TO.P,J1,7,Pin_7*%
+%TO.N,Net-(J1-Pin_7)*%
+X170161000Y-122653400D03*
+%TO.P,J1,6,Pin_6*%
+%TO.N,Net-(J1-Pin_6)*%
+X170161000Y-120113400D03*
+%TO.P,J1,5,Pin_5*%
+%TO.N,Net-(J1-Pin_5)*%
+X170161000Y-117573400D03*
+%TO.P,J1,4,Pin_4*%
+%TO.N,Net-(J1-Pin_4)*%
+X170161000Y-115033400D03*
+%TO.P,J1,3,Pin_3*%
+%TO.N,Net-(J1-Pin_3)*%
+X170161000Y-112493400D03*
+%TO.P,J1,2,Pin_2*%
+%TO.N,Net-(J1-Pin_2)*%
+X170161000Y-109953400D03*
+D11*
+%TO.P,J1,1,Pin_1*%
+%TO.N,Net-(J1-Pin_1)*%
+X170161000Y-107413400D03*
 %TD*%
 D12*
 %TO.P,SW1,1,1*%
