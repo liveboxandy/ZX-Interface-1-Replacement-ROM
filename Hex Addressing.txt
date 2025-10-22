@@ -1,0 +1,22 @@
+Address Lines Used (A0-A12) and Available (A13-A18)
+
+Addr Hex  Dec  Max
+A18 40000 256K 512K SST39SF040 Pulled Hi in Operation
+A17 20000 128K 256K SST39SF020 Pulled Hi in Operation
+A16 10000  64K 128K SST39SF010 Switched Hi/Lo by switch on my board.Pulled Lo by short to Ground on Retroleum.
+A15  8000  32K  64K Switched Hi/Lo by switch on Retroleum.
+A14  4000  16K  32K Pulled Hi in Operation
+A13  2000   8K  16K Pulled Hi in Operation. Allows 16K Operation with wire add.
+A12  1000   4K   8K Normally used.
+A11   800   2K   4K Normally used.
+A10   400   1K   2K Normally used.
+A9    200  512   1K Normally used.
+A8    100  256  512 Normally used.
+A7     80  128  256 Normally used.
+6      40   64  128 Normally used.
+5      20   32   64 Normally used.
+4      10   16   32 Normally used.
+3       8    8   16 Normally used.
+2       4    4    8 Normally used.
+1       2    2    4 Normally used.
+0       1    1    2 Normally used.
