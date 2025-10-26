@@ -6,17 +6,86 @@ A17 20000 128K 256K SST39SF020 Pulled Hi in Operation
 A16 10000  64K 128K SST39SF010 Switched Hi/Lo by switch on my board.Pulled Lo by short to Ground on Retroleum.
 A15  8000  32K  64K Switched Hi/Lo by switch on Retroleum.
 A14  4000  16K  32K Pulled Hi in Operation
-A13  2000   8K  16K Pulled Hi in Operation. Allows 16K Operation with wire add.
+A13  2000   8K  16K Pulled Hi in Operation. Allows 16K Operation with wire add to IF1.
 A12  1000   4K   8K Normally used.
 A11   800   2K   4K Normally used.
 A10   400   1K   2K Normally used.
 A9    200  512   1K Normally used.
 A8    100  256  512 Normally used.
 A7     80  128  256 Normally used.
-6      40   64  128 Normally used.
-5      20   32   64 Normally used.
-4      10   16   32 Normally used.
-3       8    8   16 Normally used.
-2       4    4    8 Normally used.
-1       2    2    4 Normally used.
-0       1    1    2 Normally used.
+A6     40   64  128 Normally used.
+A5     20   32   64 Normally used.
+A4     10   16   32 Normally used.
+A3      8    8   16 Normally used.
+A2      4    4    8 Normally used.
+A1      2    2    4 Normally used.
+A0      1    1    2 Normally used.
+
+
+J2 Pins 2-7 H=Hi Lo=L High is default with no switches
+J1 Pin Pin2 Pin3 Pin4 Pin5 Pin6 Pin7
+Address	A18  A17  A16  A15  A14  A13 
+00000    L    L    L    L    L    L
+02000    L    L    L    L    L    H
+04000    L    L    L    L    H    L
+06000    L    L    L    L    H    H
+08000    L    L    L    H    L    L
+0A000    L    L    L    H    L    H
+0C000    L    L    L    H    H    L
+0E000    L    L    L    H    H    H
+10000    L    L    H    L    L    L
+12000    L    L    H    L    L    H
+14000    L    L    H    L    H    L
+16000    L    L    H    L    H    H
+18000    L    L    H    H    L    L
+1A000    L    L    H    H    L    H
+1C000    L    L    H    H    H    L
+1E000    L    L    H    H    H    H
+20000    L    H    L    L    L    L
+22000    L    H    L    L    L    H
+24000    L    H    L    L    H    L
+26000    L    H    L    L    H    H
+28000    L    H    L    H    L    L
+2A000    L    H    L    H    L    H
+2C000    L    H    L    H    H    L
+2E000    L    H    L    H    H    H
+30000    L    H    H    L    L    L
+32000    L    H    H    L    L    H
+34000    L    H    H    L    H    L
+36000    L    H    H    L    H    H
+38000    L    H    H    H    L    L
+3A000    L    H    H    H    L    H
+3C000    L    H    H    H    H    L
+3E000    L    H    H    H    H    H
+40000    H    L    L    L    L    L
+42000    H    L    L    L    L    H
+44000    H    L    L    L    H    L
+46000    H    L    L    L    H    H
+48000    H    L    L    H    L    L
+4A000    H    L    L    H    L    H
+4C000    H    L    L    H    H    L
+4E000    H    L    L    H    H    H
+50000    H    L    H    L    L    L
+52000    H    L    H    L    L    H
+54000    H    L    H    L    H    L
+56000    H    L    H    L    H    H
+58000    H    L    H    H    L    L
+5A000    H    L    H    H    L    H
+5C000    H    L    H    H    H    L
+5E000    H    L    H    H    H    H
+60000    H    H    L    L    L    L
+62000    H    H    L    L    L    H
+64000    H    H    L    L    H    L
+66000    H    H    L    L    H    H
+68000    H    H    L    H    L    L
+6A000    H    H    L    H    L    H
+6C000    H    H    L    H    H    L
+6E000    H    H    L    H    H    H
+70000    H    H    H    L    L    L
+72000    H    H    H    L    L    H
+74000    H    H    H    L    H    L
+76000    H    H    H    L    H    H
+78000    H    H    H    H    L    L
+7A000    H    H    H    H    L    H
+7C000    H    H    H    H    H    L
+7E000    H    H    H    H    H    H

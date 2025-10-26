@@ -6,11 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "ZX Interface 1 ROM Replacement SST39SF0x0")
-		(date "2023-11-22")
-		(rev "1.1")
+		(date "2025-10-26")
+		(rev "1.2")
 		(company "Andy Potter")
 		(comment 1 "Add 0V connection to J1 allowing external switching of A14/A15/A16/A17 and A18.")
 		(comment 3 "DO NOT EXTERNALLY SWITCH A13 If USING 16K IMAGES")
+		(comment 4 "Correct ROM addresses for programming")
 	)
 	(lib_symbols
 		(symbol "IF1_Replacement_ROM:BBL-112-G-E"
@@ -2071,7 +2072,7 @@
 		)
 		(uuid "876be7fa-8ad6-40db-a724-1f61bddf0469")
 	)
-	(text "J1 pin 1 ~WE pulled high in operation by 10K resistor R1 on ROM board.\nJ1 pin 2 A18 pulled high in operation by 10K resistor R8 on ROM board.\nJ1 pin 3 A17 pulled high in operation by 10K resistor R7 on ROM board.\nJ1 pin 4 A16 selects ROM to use, pulled high or low in operation by switch and 10K resistor \n    R2 on ROM board. Includes switching of A16 if internal switch set to position B.\nJ1 pin 5 A15 pulled high in operation by 10K resistor R5 on ROM board.\nJ1 pin 6 A14 pulled high in operation by 10K resistor R4 on ROM board.\nJ1 pin 7 A13 pulled high in operation by 10K resistor R3 on ROM board. If connected\n    with a wire link to address A13 on IF1 PCB allows use of 16K ROM (Ian Collier). \nJ1 pin 8 CE pulled low in operation by 10K resistor R6 on ROM board.\nJ1 Pin 9 0V Allows pulling down of address lines J1 Pin 1 to Pin 8 by external switches but \n    can be left unconnected if the switches are externally connected to ground. \n\nTo program,\n    Connect to Adapter PCB and link J1 on Adapter PCB and J1 on ROM PCB\n    Pins 1-1,2-2,3-3,4-4,5-5,6-6,7-7 and 8-8. J1 Pin 9 is not connected.\n    Set switch on ROM PCB to position B\n\n1 - Select correct EEPROM in progammer and Erase EEPROM as normal.\n2 - To use default switched A16 load 1st ROM into programmer at 0x00000\n3 - To use default switched A16 load 2nd ROM into programmer at 0x10000\n    without clearing previous ROM.\n4 - Load other ROM's into programmer as required with the IF1 addressing based \n    on the position of external switches.\nA18 switches 0x40000 (SST39SF040 Only)\nA17 switches every 0x20000 (SST39SF020 and 040 Only)\nA16 switches every 0x10000 if internal switch set to position B.\nA15 switches every 0x08000\nA14 switches every 0x04000\nA13 switchws every 0x02000 (Do not connect to switch if using 16K images as this \n    needs to be connected to A13 on the IF1)\n\nA mix of switches is allowed and will increase the number of ROM positions\navailable, up to a maximum of 32.\n\n5 - program as normal.\"\n"
+	(text "J1 pin 1 ~WE pulled high in operation by 10K resistor R1 on ROM board.\nJ1 pin 2 A18 pulled high in operation by 10K resistor R8 on ROM board.\nJ1 pin 3 A17 pulled high in operation by 10K resistor R7 on ROM board.\nJ1 pin 4 A16 selects ROM to use, pulled high or low in operation by switch and 10K resistor \n    R2 on ROM board. Includes switching of A16 if internal switch set to position B.\nJ1 pin 5 A15 pulled high in operation by 10K resistor R5 on ROM board.\nJ1 pin 6 A14 pulled high in operation by 10K resistor R4 on ROM board.\nJ1 pin 7 A13 pulled high in operation by 10K resistor R3 on ROM board. If connected\n    with a wire link to address A13 on IF1 PCB allows use of 16K ROM (Ian Collier). \nJ1 pin 8 CE pulled low in operation by 10K resistor R6 on ROM board.\nJ1 Pin 9 0V Allows pulling down of address lines J1 Pin 1 to Pin 8 by external switches but \n    can be left unconnected if the switches are externally connected to ground. \n\nTo program,\n    Connect to Adapter PCB and link J1 on Adapter PCB and J1 on ROM PCB\n    Pins 1-1,2-2,3-3,4-4,5-5,6-6,7-7 and 8-8. J1 Pin 9 is not connected.\n    Set switch on ROM PCB to position B\n\n1 - Select correct EEPROM in progammer and Erase as normal.     39SF040 /39SF020 /39SF010\n2 - To use default switched A16 load 1st ROM into programmer at  0x6E0000/0x2E0000/0X0E0000\n3 - To use default switched A16 load 2nd ROM into programmer at 0x7E0000/0X3E0000/0X1E0000\n    without clearing previous ROM.\n4 - Load other ROM's into programmer as required with the IF1 addressing based \n    on the position of external switches.\nA18 switches every 0x40000 (SST39SF040 Only)\nA17 switches every 0x20000 (SST39SF020 and 040 Only)\nA16 switches every 0x10000 if internal switch set to position B.\nA15 switches every 0x08000\nA14 switches every 0x04000\nA13 switchws every 0x02000 (Do not connect to switch if using 16K images as this \n    needs to be connected to A13 on the IF1)\n\nA mix of switches is allowed and will increase the number of ROM positions\navailable.\n\n5 - program as normal.\"\n"
 		(exclude_from_sim no)
 		(at 14.478 87.122 0)
 		(effects
